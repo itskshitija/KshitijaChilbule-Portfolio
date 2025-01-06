@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Data Portfolio</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Data Portfolio</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Kshitija profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Kshitija Chilbule</h1>
+        <p class="section__text__p2">Data Analyst</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/kshitija-chilbule-b98515309/" target="_blank" class="linkedin">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/itskshitija" target="_blank" class="github">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.hackerrank.com/profile/kshitijachilbul5" target="_blank" class="hackerrank">
+            <i class="fab fa-hackerrank"></i>
+          </a>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- ******************************************************************************************** -->
+    <!-- About Section Start-->
+    <!-- ******************************************************************************************** -->
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <!-- Education Section -->
+      <div class="education-container" style="border: 1px solid #ccc; padding: 20px; border-radius: 10px; background-color: #fff; margin-top: 20px;">
+        <h1 style="font-size: 24px; color: #333; margin-bottom: 15px;">Education</h1>
+        <div style="display: flex; align-items: center; margin-bottom: 10px;">
+          <img src="https://img.icons8.com/ios/50/000000/internet.png" alt="Internet Icon" style="width: 30px; height: 30px; margin-right: 10px;"/>
+          <p style="font-size: 16px; color: #555; margin: 0;">Internet (For Lifetime)</p>
+        </div>
+        <div style="display: flex; align-items: center;">
+          <img src="https://img.icons8.com/ios/50/000000/graduation-cap.png" alt="Graduation Icon" style="width: 30px; height: 30px; margin-right: 10px;"/>
+          <p style="font-size: 16px; color: #555; margin: 0;">
+            Bachelor of Computer Science and Engineering - G.H. Raisoni College of Engineering, Nagpur (2023)
+          </p>
+        </div>
+      </div>
+      
+      <div class="section-container" style="display: flex; gap: 20px; align-items: flex-start;">
+        <!-- Skill Bar Section -->
+        <div class="container" style="flex: 1; border: 1px solid #ccc; padding: 20px; border-radius: 10px; background-color: #fff;">
+          <h1 style="text-align: left; color: #333;">My Skills</h1>
+          <div class="skillbar learning" data-skill="NodeJS"></div>
+          <div class="skillbar basic" data-skill="React"></div>
+          <div class="skillbar intermediate" data-skill="HTML"></div>
+          <div class="skillbar advanced" data-skill="SCSS"></div>
+          <div class="skillbar expert" data-skill="JS"></div>
+          <div class="skillbar advanced" data-skill="SCSS"></div>
+          <div class="skillbar intermediate" data-skill="HTML"></div>
+          <div class="skillbar learning" data-skill="NodeJS"></div>
+        </div>
+    
+        <!-- Paragraph Section -->
+        <div class="text-container" style="flex: 1; border: 1px solid #ccc; padding: 20px; border-radius: 10px; background-color: #fff;">
+          <p>
+            Hi, I'm Kshitija, a results-oriented Data Analyst with a passion for turning raw data 
+            into actionable insights. Proficient in Power BI, SQL, Python, and Advanced Excel, 
+            I excel at data cleaning, analysis, and visualization to support data-driven decision-making. 
+            With a strong problem-solving mindset and attention to detail, I am committed to 
+            delivering impactful solutions that drive business growth and innovation.
+
+            <br>
+            <br>
+
+            <b>Statistics:</b> Solid understanding of statistical concepts and methodologies for data analysis and inference.
+            <br>
+            <br>
+            <b>SQL:</b> Proficient in SQL (Structured Query Language) for data extraction, manipulation, and querying in relational databases.
+            <br>
+            <br>
+            <b>Power BI:</b> Experienced in data visualization and reporting using Power BI to communicate insights effectively.
+            <br>
+            <br>
+            <b>Advanced MS Excel:</b> Skilled in Excel Formulas & Functions, Charts & Graphs, Pivot Tables, Power Query & Excel Dashboard.
+            <br>
+            <br>
+            <b>Python:</b> Proficient in Python programming language for data manipulation, analysis, and modeling.
+            <br>
+            <br>
+            <b>Machine Learning:</b> Hands on experience in various machine learning techniques and algorithms for predictive modeling and pattern recognition.
+            <br>
+            <br>
+            <b>Mathematics:</b> Strong foundation in mathematical concepts such as linear algebra, calculus, and probability theory, essential for data science modeling and analysis.
+            <br>
+            <br>
+            <b>AWS:</b> Have basic knowledge of Cloud Computing and AWS Services
+          </p>
+        </div>
+      </div>
+  
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    
+
+
+
+    <!-- ******************************************************************************************** -->
+    <!-- Experience Section -->
+    <!-- ******************************************************************************************** -->
+    <section id="experience" style="padding: 40px 20px; background: linear-gradient(45deg, #6a1b9a, #ff6f61);">
+      <p class="section__text__p1" style="font-size: 18px; color: #ddd; margin-bottom: 5px;">Explore My</p>
+      <h1 class="title" style="font-size: 32px; color: #fff; margin-bottom: 20px;">Experience</h1>
+      
+      <div class="experience-details-container" style="display: flex; flex-direction: column; gap: 20px;">
+        
+        <!-- Internship Experience Box -->
+        <div class="experience-box" style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; background-color: #fff;">
+          <h2 class="experience-sub-title" style="font-size: 24px; color: #333; margin-bottom: 10px;">Internships</h2>
+          
+          <div class="internship-details-container">
+            
+            <!-- Internship 1 -->
+            <div class="internship-detail" style="margin-bottom: 20px;">
+              <h3 style="font-size: 20px; color: #333;">Virtual Data Analyst Intern - CognoRise Infotech</h3>
+              <p style="font-size: 16px; color: #777; margin: 5px 0;"><strong>Duration:</strong> June 2024 - September 2024</p>
+              <ul style="font-size: 16px; color: #555; list-style-type: disc; margin-left: 20px;">
+                <li>Analyzed unemployment data in India and provided actionable insights for policy makers.</li>
+                <li>Developed dashboards in Power BI to track and visualize key metrics for HR data analytics.</li>
+                <li>Collaborated with cross-functional teams to enhance the data-driven decision-making process.</li>
+              </ul>
+            </div>
+    
+            <!-- Internship 2 -->
+            <div class="internship-detail" style="margin-bottom: 20px;">
+              <h3 style="font-size: 20px; color: #333;">Data Analyst Intern - Afame Technologies</h3>
+              <p style="font-size: 16px; color: #777; margin: 5px 0;"><strong>Duration:</strong> October 2024 - December 2024</p>
+              <ul style="font-size: 16px; color: #555; list-style-type: disc; margin-left: 20px;">
+                <li>Worked on sales data analysis to derive actionable insights for sales strategy optimization.</li>
+                <li>Designed dynamic Power BI dashboards to represent sales performance across different regions.</li>
+                <li>Utilized advanced Excel techniques for data cleaning and analysis to optimize business operations.</li>
+              </ul>
+            </div>
+    
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    <!-- ******************************************************************************************** -->
+    <!-- Project Section -->
+    <!-- ******************************************************************************************** -->
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="projects-container">
+
+        <!-- Project Card 1 -->
+        <div class="project-card">
+          <h2 class="project-title">Christmas Sales & Trends Analysis</h2>
+          <div class="embed-container">
+            <iframe src="https://app.powerbi.com/reportEmbed?reportId=af4e1509-f83e-4879-86fb-b7beb985c0a5&autoAuth=true&ctid=e1326834-a777-42f7-8cb8-6033e91e99b8" width="100%" height="300" frameborder="0" allowFullScreen="true"></iframe>
+          </div>
+          <div class="skill-badges">
+            <span class="badge">Power BI</span>
+            <span class="badge">Retail</span>
+            <span class="badge">Trend Analysis</span>
+            <span class="badge">intermediate</span>
+          </div>
+    
+          <div class="project-description">
+            <h3>Project Description</h3>
+            <p>
+              The aim of this project is to uncover insights into customer behavior and sales trends during the festive season with this comprehensive analysis of Christmas sales data. This project provides actionable intelligence to optimize strategies and improve holiday campaign outcomes.
+            </p>
+            <br>
+            <h3>Dataset Information</h3>
+            <p>The dataset contains 10,000 observations.</p>
+            <br>
+            <h3>Data Source</h3>
+            <p>FP20 Analytics Data Challenge</p>
+          </div>
+    
+          <div class="btn-container">
+            <a href="https://github.com/itskshitija/Christmas-Sales-and-Trend-Analysis" target="_blank" class="icon-link">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+    
+    
+        <!-- Project Card 2 -->
+        <div class="project-card">
+          <h2 class="project-title">HR Analytics</h2>
+          <div class="embed-container">
+            <iframe src="https://app.powerbi.com/reportEmbed?reportId=71c5ef12-d424-4f1b-a965-4e2fb3a2ed1c&autoAuth=true&ctid=e1326834-a777-42f7-8cb8-6033e91e99b8" width="100%" height="300" frameborder="0" allowFullScreen="true"></iframe>
+          </div>
+          <div class="skill-badges">
+            <span class="badge">Power BI</span>
+            <span class="badge">Python</span>
+            <span class="badge">Data Analysis</span>
+            <span class="badge">Storytelling</span>
+            <span class="badge">Basic</span>
+          </div>
+    
+          <div class="project-description">
+            <h3>Project Description</h3>
+            <p>
+              The HR Data Analytics Dashboard project analyzes employee data in depth to derive actionable insights for the Human Resources department. It leverages Power BI to visualize critical HR metrics and KPIs, enabling HR teams to make data-driven decisions to improve workforce management, employee satisfaction, and organizational growth.
+            </p>
+            <br>
+            <h3>Dataset Information</h3>
+            <p>The HR Analytics dataset consists of 1,470 observations and 41 attributes</p>
+            <br>
+            <h3>Data Source</h3>
+            <p>FP20 Analytics Data Challenge</p>
+          </div>
+    
+          <div class="btn-container">
+            
+            <button class="btn gradient-btn" onclick="location.href='https://www.linkedin.com/'">LinkedIn</button>
+            <button class="btn gradient-btn" onclick="location.href='https://medium.com/@kshitijachilbule2/predicting-employee-behavior-hr-analytics-8619586ea867'">Read Article</button>
+            <a href="https://github.com/itskshitija/HR-Data-Analysis" target="_blank" class="icon-link">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+    
+        <!-- Project Card 3 -->
+        <div class="project-card">
+          <h2 class="project-title">Analyzing Blinkit's Performance</h2>
+          <div class="embed-container">
+            <iframe src="https://app.powerbi.com/reportEmbed?reportId=a34f301d-f734-40d6-9fe1-7c4d24dd42e0&autoAuth=true&ctid=e1326834-a777-42f7-8cb8-6033e91e99b8" width="100%" height="300" frameborder="0" allowFullScreen="true"></iframe>
+          </div>
+          <div class="skill-badges">
+            <span class="badge">Power BI</span>
+            <span class="badge">Python</span>
+            <span class="badge">Retail Analysis</span>
+            <span class="badge">Product Analysis</span>
+            <span class="badge">Basic</span>
+          </div>
+    
+          <div class="project-description">
+            <h3>Project Description</h3>
+            <p>
+              The aim of this project is to conduct a comprehensive analysis of Blinkit's sales performance, customer satisfaction, and inventory distribution to identify key insights into Blinkit's data.
+            </p>
+            <br>
+            <h3>Dataset Information</h3>
+            <p>The Blinkit dataset contains 8523 observations and 12 attributes.</p>
+            <br>
+            <h3>Data Source</h3>
+            <p>Kaggle</p>
+          </div>
+    
+          <div class="btn-container">
+            <button class="btn gradient-btn" onclick="location.href='https://medium.com/@kshitijachilbule2/analyzing-blinkit-performance-47fdf28bc163'">Read Article</button>
+            <a href="https://github.com/itskshitija/Analyzing-Blinkit-Performance" target="_blank" class="icon-link">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+
+
+        <!-- Project Card 4 -->
+        <div class="project-card">
+          <h2 class="project-title">CRM Sales Dashboard</h2>
+          <div class="embed-container">
+            <iframe src="https://app.powerbi.com/reportEmbed?reportId=fd7a818e-0d2b-419d-bfa2-dfbeb6407c26&autoAuth=true&ctid=e1326834-a777-42f7-8cb8-6033e91e99b8" width="100%" height="300" frameborder="0" allowFullScreen="true"></iframe>
+          </div>
+          <div class="skill-badges">
+            <span class="badge">Power BI</span>
+            <span class="badge">Time Series</span>
+            <span class="badge">Business</span>
+            <span class="badge">intermediate</span>
+          </div>
+    
+          <div class="project-description">
+            <h3>Project Description</h3>
+            <p>
+              As a Sales Manager at Maven Tech, a company specializing in selling computer hardware to large businesses, I was tasked with addressing the company's lack of visibility into their CRM sales data. Despite implementing a new CRM system to track sales opportunities, the sales team had no clear insights into their performance outside of the platform. To resolve this, I developed an interactive dashboard that enables the sales managers to efficiently track their team's quarterly performance.
+              <br>
+              <br>
+              This dashboard aggregates key sales data, such as sales opportunities, product details, team performance metrics, and overall sales trends, providing a visual representation of each team member's progress towards sales goals. By implementing dynamic filters and interactive features, the dashboard allows sales managers to drill down into specific data points, identify areas of improvement, and make data-driven decisions to optimize sales strategies.
+            </p>
+            <br>
+            <h3>Objective</h3>
+            <p>The goal of this project was to provide Maven Tech's sales managers with an intuitive, real-time tool to evaluate team performance, track sales progress, and make informed decisions to drive growth. The interactive dashboard enhances visibility, improves reporting capabilities, and enables proactive management of sales opportunities.</p>
+            <br>
+            <h3>Dataset Information</h3>
+            The dataset contains 8800 observations and 18 attributes. 
+            <br>
+            <br>
+            <h3>Data Source</h3>
+            <p>Maven Analytics Data Challenge</p>
+          </div>
+    
+          <div class="btn-container">
+            <button class="btn gradient-btn" onclick="location.href='https://www.linkedin.com/posts/kshitija-chilbule-b98515309_business-timeseries-powerbi-activity-7280993885089140737-7bBy?utm_source=share&utm_medium=member_desktop'">LinkedIn Post</button>
+            <a href="https://github.com/itskshitija/CRM-Sales-Dashboard" target="_blank" class="icon-link">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+
+
+        <!-- Project Card 5 -->
+        <div class="project-card">
+          <h2 class="project-title">Lego Set Explorer</h2>
+          <div class="embed-container">
+            <iframe src="https://app.powerbi.com/reportEmbed?reportId=8d474da9-ee11-4173-9377-b77f7b984dcd&autoAuth=true&ctid=e1326834-a777-42f7-8cb8-6033e91e99b8" width="100%" height="300" frameborder="0" allowFullScreen="true"></iframe>
+          </div>
+          <div class="skill-badges">
+            <span class="badge">Power BI</span>
+            <span class="badge">Trend Analysis</span>
+            <span class="badge">Retail</span>
+            <span class="badge">intermediate</span>
+          </div>
+    
+          <div class="project-description">
+            <h3>Project Description</h3>
+            <p>
+              The LEGO Set Explorer project aims to provide an interactive dashboard that allows users to explore the history and evolution of LEGO sets released over the past 50 years. Using data from 1970 to 2022, the dashboard offers a comprehensive view of LEGO sets, including details such as set themes, piece count, recommended age, retail price, and more. The goal is to provide LEGO enthusiasts and collectors with insights into the trends and changes in LEGO sets over time.
+            </p>
+            <br>
+            <h3>Objective</h3>
+            <p>This project provides an engaging way to analyze the evolution of LEGO sets, helping users gain insights into how LEGO has changed its product offerings over time.</p>
+            <br>
+            <h3>Dataset Information</h3>
+            The dataset contains 18459 observations and 14 attributes. 
+            <br>
+            <br>
+            <h3>Data Source</h3>
+            <p>Maven Analytics Data Challenge</p>
+          </div>
+    
+          <div class="btn-container">
+            <button class="btn gradient-btn" onclick="location.href='https://www.linkedin.com/posts/kshitija-chilbule-b98515309_lego-challenge-dashboard-activity-7270362877943767041-khNT?utm_source=share&utm_medium=member_desktop'">LinkedIn Post</button>
+            <a href="https://github.com/itskshitija/Lego-Set-Explorer" target="_blank" class="icon-link">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project Card 6 -->
+        <div class="project-card">
+          <h2 class="project-title">Bank Customer Churn Analysis</h2>
+          <div class="embed-container">
+            <img src="assets/Churn_gif.gif" width="100%" height="300" frameborder="0" allowFullScreen="true"></iframe>
+          </div>
+          <div class="skill-badges">
+            <span class="badge">Google Sheets</span>
+            <span class="badge">Business</span>
+            <span class="badge">Finance</span>
+            <span class="badge">intermediate</span>
+          </div>
+    
+          <div class="project-description">
+            <h3>Project Description</h3>
+            <p>
+              The Customer Churn Analysis in Banking project focuses on analyzing key factors contributing to customer attrition within a banking institution. Using an interactive Excel dashboard, the project uncovers actionable insights to help banks address customer churn. It explores various dimensions such as gender, region, credit type, age group, account balance, tenure, and customer satisfaction to identify trends and patterns that influence customer behavior. This comprehensive analysis assists in devising strategies for enhancing customer engagement, satisfaction, and loyalty.
+            <br>
+            <br>
+            The project examines customer churn data from three geographical regions: Spain, Germany, and France, offering a region-wise comparison of churn behavior. It also explores the impact of customer demographics, account characteristics, and complaints to determine key drivers of churn.
+            </p>
+            <br>
+            <h3>Objective</h3>
+            <p>This project provides an engaging way to analyze the evolution of LEGO sets, helping users gain insights into how LEGO has changed its product offerings over time.</p>
+            <br>
+            <h3>Dataset Information</h3>
+            The dataset contains 10,000 observations and 18 attributes. 
+            <br>
+            <br>
+            <h3>Data Source</h3>
+            <p>Maven Analytics Data Challenge</p>
+          </div>
+    
+          <div class="btn-container">
+            <button class="btn gradient-btn" onclick="location.href='https://medium.com/@kshitijachilbule2/customer-churn-analysis-in-bank-07bd1ce19090'">Read Article</button>
+            <button class="btn gradient-btn" onclick="location.href='https://www.linkedin.com/posts/kshitija-chilbule-b98515309_dataanalysis-dataanalyst-datascience-activity-7275610111945916417-_mue?utm_source=share&utm_medium=member_desktop'">LinkedIn Post</button>
+            <a href="https://github.com/itskshitija/Analyzing-Bank-Customer-Churn-using-Excel" target="_blank" class="icon-link">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+          </div>
+
+
+          <!-- Project Card 7 -->
+          <div class="project-card">
+          <h2 class="project-title">Analyzing the NYC Airbnb Market</h2>
+          <div class="embed-container">
+            <iframe src="assets/AirbnbMarketAnalysis.pdf" width="100%" height="300" frameborder="0" allowfullscreen="true"></iframe>
+          </div>        
+          <div class="skill-badges">
+            <span class="badge">Python</span>
+            <span class="badge">EDA</span>
+            <span class="badge">Business</span>
+            <span class="badge">Time Series</span>
+            <span class="badge">intermediate</span>
+          </div>
+          <div class="project-description">
+            <h3>Project Description</h3>
+            <p>
+              The NYC Airbnb Market Analysis project offers an in-depth exploration of New York City's Airbnb listings using Python and exploratory data analysis (EDA). This project leverages a dataset of Airbnb listings to decode pricing patterns, neighborhood trends, and room types, providing actionable insights for travelers, hosts, and the Airbnb platform itself. It includes questions such as identifying top hosts, analyzing room types, and understanding neighborhood group dynamics.
+            </p>
+            <br>
+            <h3>Objective</h3>
+            <p>The primary goal is to analyze the dynamics of Airbnb listings in NYC and provide insights to optimize decision-making for various stakeholders:
+              <ul style="color: #333;">
+                <li><b>Travelers:</b> Assist in identifying budget-friendly and suitable accommodations.</li>
+                <li><b>Hosts:</b> Help optimize pricing and property listings for better visibility and profitability.</li>
+                <li><b>Airbnb Business:</b> Uncover market trends to enhance platform offerings and customer satisfaction.</li>
+              </ul>
+            </p>
+            <br>
+            <h3>Dataset Information</h3>
+            The dataset contains 48895 observations and 16 attributes. 
+            <br>
+            <br>
+            <h3>Data Source</h3>
+            <p>Kaggle</p>
+          </div>
+          <div class="btn-container">
+            <button class="btn gradient-btn" onclick="location.href='https://medium.com/@kshitijachilbule2/analyzing-the-nyc-airbnb-market-using-python-5692b1f5a3e1'">Read Article</button>
+            <a href="https://github.com/itskshitija/Analyzing-Bank-Customer-Churn-using-Excel" target="_blank" class="icon-link">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+          </div>
+
+          <!-- Project Card 8-->
+          <div class="project-card">
+            <h2 class="project-title">Forecasting Tesla Stock Prices Using Time Series Analysis </h2>
+            <div class="embed-container">
+              <iframe src="assets/tesla_time_series.pdf" width="100%" height="300" frameborder="0" allowfullscreen="true"></iframe>
+            </div>        
+            <div class="skill-badges">
+              <span class="badge">Python</span>
+              <span class="badge">EDA</span>
+              <span class="badge">Time Series</span>
+              <span class="badge">Finance</span>
+              <span class="badge">Business</span>
+              <span class="badge">Machine Learning</span>
+              <span class="badge">Advanced</span>
+            </div>
+            <div class="project-description">
+              <h3>Project Description</h3>
+              <p>
+                The aim of the project is to analyze the Tesla stock price dataset by conducting thorough Exploratory Data Analysis and developing forecasting models to predict future stock trends
+              </p>
+              <br>
+              <h3>Data Source</h3>
+              <p>365 Data Science</p>
+            </div>
+            <div class="btn-container">
+              <button class="btn gradient-btn" onclick="location.href='https://www.linkedin.com/posts/kshitija-chilbule-b98515309_tesla-stock-price-forecasting-with-time-series-activity-7274110373073506304-laXK?utm_source=share&utm_medium=member_desktop'">LinkedIn Post</button>
+              <a href="https://github.com/itskshitija/Tesla-Stock-Price-Prediction" target="_blank" class="icon-link">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+            </div>
+
+            <!-- Project Card 7 -->
+          <div class="project-card">
+            <h2 class="project-title">Customer Segmentation Analysis</h2>
+            <div class="embed-container">
+              <iframe src="assets/Customer_Segmentation_Analysis.pdf" width="100%" height="300" frameborder="0" allowfullscreen="true"></iframe>
+            </div>        
+            <div class="skill-badges">
+              <span class="badge">Python</span>
+              <span class="badge">EDA</span>
+              <span class="badge">Business</span>
+              <span class="badge">Unsupervised Machine Learning</span>
+              <span class="badge">Advanced</span>
+            </div>
+            <div class="project-description">
+              <h3>Project Description</h3>
+              <p>
+                The Customer Segmentation Analysis project utilizes an unsupervised machine learning algorithm to identify distinct customer groups based on purchasing behavior. By analyzing data, the project aims to help businesses understand customer demographics, preferences, and behaviors.
+              </p>
+              <br>
+              <h3>Objective</h3>
+              <p>Customer Segmentation is a crucial business practice that involves grouping customers based on shared characteristics. This analysis leverages unsupervised machine learning to classify customers using behavioral and demographic data.
+                <ul style="color: #333;">
+                  The insights help businesses:
+                  <li>Target specific customer groups effectively.</li>
+                  <li>Enhance marketing strategies tailored to customer preferences.</li>
+                  <li>Boost customer satisfaction and loyalty.</li>
+                </ul>
+              </p>
+              <br>
+              <h3>Dataset Information</h3>
+              The dataset comprises 2,000 customer records from an FMCG store, captured through loyalty card transactions. 
+              <br>
+              <br>
+              <h3>Data Source</h3>
+              <p>365 Data Science</p>
+            </div>
+            <div class="btn-container">
+              <button class="btn gradient-btn" onclick="location.href='https://www.linkedin.com/posts/kshitija-chilbule-b98515309_customer-segmentation-analysis-activity-7277564476961263616-Vbfx?utm_source=share&utm_medium=member_desktop'">LinkedIn Post</button>
+              <a href="https://github.com/itskshitija/Customer-Segmentation-Analysis" target="_blank" class="icon-link">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+            </div>
+
+      </div>
+    </section>
+    
+    
+  
+    <!-- ******************************************************************************************** -->
+    <!-- Certification Section -->
+    <!-- ******************************************************************************************** -->
+
+    <section id="certifications" style="padding: 40px 20px; background-color: #fff;">
+      <p class="section__text__p1" style="font-size: 18px; color: #555; margin-bottom: 5px;">Explore My</p>
+      <h1 class="title" style="font-size: 32px; color: #333; margin-bottom: 20px;">Certifications</h1>
+      
+      <div class="certifications-container" style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center;">
+        
+        <!-- Certification 1 -->
+        <div class="certification-box">
+          <img src="assets/Google-DA.png" alt="Certification 1">
+          <h3>Google Data Analytics</h3>
+          <p>Google (Coursera)</p>
+          <p>Issued on: 11/2024</p>
+        </div>
+    
+        <!-- Certification 2 -->
+        <div class="certification-box">
+          <img src="assets/AWS.png" alt="Certification 2">
+          <h3>AWS Fundamentals Specialization</h3>
+          <p>AWS (Coursera)</p>
+          <p>Issued on: 10/2024</p>
+        </div>
+    
+        <!-- Certification 3 -->
+        <div class="certification-box">
+          <img src="assets/excel-codebasics.png" alt="Certification 3">
+          <h3>Excel:Mother of Business Intelligence</h3>
+          <p>Codebasics</p>
+          <p>Issued on: 06/2024</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ******************************************************************************************** -->
+    <!-- Contact Section -->
+    <!-- ******************************************************************************************** -->
+    <section id="contact">
+      <div class="container"  style="background-color: #fff;">
+        <h1 class="title">Contact Information</h1>
+        <div class="contact-info">
+          <p>
+            <i class="fas fa-phone-alt"></i> <strong>Phone:</strong> +91-7620424864
+          </p>
+          <p>
+            <i class="fas fa-envelope"></i> <strong>Email:</strong> kshitijachilbule2@gmail.com
+          </p>
+        </div>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="linkedin">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/yourusername" target="_blank" class="github">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.hackerrank.com/yourusername" target="_blank" class="hackerrank">
+            <i class="fab fa-hackerrank"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    
+    
+    
+    
+
+    <!-- ******************************************************************************************** -->
+    <!-- Footer Section -->
+    <!-- ******************************************************************************************** -->
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Kshitija Chilbule. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
