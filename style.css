@@ -653,6 +653,18 @@ section {
   background: linear-gradient(90deg, #6a1b9a, #ff6f61); 
 }
 
+.icon-link {
+  font-size: 32px;
+  color: #000; /* Adjust color as needed */
+  margin-right: 10px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.icon-link:hover {
+  color: #333; /* Adjust hover color */
+}
+
 @media screen and (max-width: 768px) {
   .projects-container {
     grid-template-columns: repeat(1, 1fr); /* 1 card per row on smaller screens */
@@ -829,14 +841,4 @@ footer p {
 
 
 
-.icon-link {
-  font-size: 32px;
-  color: #000; /* Adjust color as needed */
-  margin-right: 10px;
-  text-decoration: none;
-  transition: color 0.3s;
-}
 
-.icon-link:hover {
-  color: #333; /* Adjust hover color */
-}
