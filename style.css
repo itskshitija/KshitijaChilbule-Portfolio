@@ -625,6 +625,43 @@ section {
 .right {
   right: 10px;
 }
+/* Basic Flexbox Layout for Desktop */
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page {
+  width: 30%;  /* Adjust based on how many items you want per row */
+}
+
+/* Responsive Layout for Mobile (screen width 600px or smaller) */
+@media (max-width: 600px) {
+  .container {
+      flex-direction: column;  /* Stack elements vertically on smaller screens */
+      align-items: center;     /* Center align the items */
+  }
+
+  .page {
+      width: 100%;  /* Make the items full width on mobile */
+      margin-bottom: 10px; /* Optional: Add spacing between items */
+  }
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 600px) {
+  .arrow {
+      font-size: 20px;  /* Adjust size for mobile */
+      left: 10px; /* Adjust placement for smaller screens */
+      right: 10px;
+  }
+
+  /* Optional: Add spacing between the arrows and image */
+  .image-container {
+      position: relative;
+      overflow: hidden;
+  }
+}
 
 
 /* Contact Section */

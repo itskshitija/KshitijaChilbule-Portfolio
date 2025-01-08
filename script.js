@@ -17,6 +17,8 @@ function showImage(index) {
   // Calculate the position of the images
   const offset = -index * 100;
   document.querySelector('.carousel-images').style.transform = `translateX(${offset}%)`;
+
+  // Update current index
   currentIndex = index;
 }
 
