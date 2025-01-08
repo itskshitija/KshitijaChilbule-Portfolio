@@ -588,6 +588,43 @@ section {
   }
 }
 
+.image-carousel {
+  position: relative;
+  width: 100%; /* Adjust width as needed */
+  max-width: 800px; /* You can set a max-width for the carousel */
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel-images {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carousel-image {
+  width: 100%;
+  object-fit: cover; /* Ensures image covers the entire space without stretching */
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.left {
+  left: 10px;
+}
+
+.right {
+  right: 10px;
+}
 
 
 /* Contact Section */
