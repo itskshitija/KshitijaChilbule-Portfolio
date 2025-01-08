@@ -287,101 +287,6 @@ section {
   justify-content: space-between;
 }
 
-/* Skill Bar Container */
-.container {
-  flex: 1;
-  border: 1px solid #ccc;
-  padding: 20px;
-  border-radius: 10px;
-  background-color: #f9f9f9;
-}
-
-.container h1 {
-  font-size: 1.5rem;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-/* Skill Bars */
-.skillbar {
-  position: relative;
-  width: 100%;
-  height: 30px;
-  margin: 10px 0;
-  background-color: #eee;
-  border-radius: 10px;
-  overflow: hidden;
-  width: 0%;  /* Set initial width to 0% */
-  background-image: linear-gradient(45deg, #ff6f61, #6a1b9a); /* Gradient background */
-}
-
-/* Text inside skill bar */
-.skillbar:before {
-  content: attr(data-skill);
-  position: absolute;
-  top: 50%;
-  left: 10px;
-  transform: translateY(-50%);
-  color: black; /* Make the text inside the bar black */
-  font-size: 0.9rem;
-}
-
-/* Skill Bar Progress */
-.skillbar.learning {
-  background-image: linear-gradient(45deg, #ff6f61, #6a1b9a); /* Gradient for learning */
-}
-
-.skillbar.basic {
-  background-image: linear-gradient(45deg, #ff6f61, #6a1b9a); /* Gradient for basic */
-}
-
-.skillbar.intermediate {
-  background-image: linear-gradient(45deg, #ff6f61, #6a1b9a); /* Gradient for intermediate */
-}
-
-.skillbar.advanced {
-  background-image: linear-gradient(45deg, #ff6f61, #6a1b9a); /* Gradient for advanced */
-}
-
-.skillbar.expert {
-  background-image: linear-gradient(45deg, #ff6f61, #6a1b9a); /* Gradient for expert */
-}
-
-/* Animation */
-@keyframes skill-bar-animation {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: var(--skill-width);
-  }
-}
-
-.skillbar.learning {
-  --skill-width: 50%;
-  animation: skill-bar-animation 2s ease-in-out forwards;
-}
-
-.skillbar.basic {
-  --skill-width: 30%;
-  animation: skill-bar-animation 2s ease-in-out forwards;
-}
-
-.skillbar.intermediate {
-  --skill-width: 60%;
-  animation: skill-bar-animation 2s ease-in-out forwards;
-}
-
-.skillbar.advanced {
-  --skill-width: 80%;
-  animation: skill-bar-animation 2s ease-in-out forwards;
-}
-
-.skillbar.expert {
-  --skill-width: 90%;
-  animation: skill-bar-animation 2s ease-in-out forwards;
-}
-
 /* Text Container */
 .text-container {
   flex: 1;
@@ -547,9 +452,6 @@ section {
 
 
 /* PROJECTS SECTION */
-
-
-
 #projects {
   padding: 50px 20px;
   background-color: #fff;
@@ -606,12 +508,21 @@ section {
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
-
-.embed-container iframe {
-  border: none;
-  border-radius: 8px;
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
 }
-
+.embed-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
 .skill-badges {
   display: flex;
   flex-wrap: wrap;
@@ -838,7 +749,4 @@ footer {
 footer p {
   text-align: center;
 }
-
-
-
 
